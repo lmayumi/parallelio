@@ -22,7 +22,7 @@ object NonBlockingIO {
       
       try {
         executor.shutdown()
-        executor.awaitTermination(1, TimeUnit.SECONDS)     
+        executor.awaitTermination(1, TimeUnit.MINUTES)     
       } catch {
         case e: Exception => println("Something went wrong!")  
       }  
