@@ -25,10 +25,8 @@ object NonBlockingIO {
         executor.awaitTermination(1, TimeUnit.SECONDS)     
       } catch {
         case e: Exception => println("Something went wrong!")  
-      } 
-      
-    }
-    
+      }  
+    }    
   }
 
 }
